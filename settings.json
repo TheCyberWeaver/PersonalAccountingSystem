@@ -1,0 +1,13 @@
+{
+    "app_name": "Personal Accounting System",
+    "version" : "v1.0.2",
+    "copyright" : "By: Thomas Lu",
+    "year" : 2023,
+    "theme_name" : "dracula",
+    "app_main":"E:\\PersonalAccountingSystem\\output\\main\\main.exe",
+    "icon": "E:\\Smarttoolbox\\Resources\\logo_top_22x22.ico",
+
+    "mysql_host": "localhost",
+    "user":"root",
+    "password":"7bf9108cd896f33C!"
+}
