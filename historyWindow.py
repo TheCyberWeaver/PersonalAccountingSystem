@@ -135,44 +135,6 @@ class historyWindow(QWidget):
             bg_color_pressed=self.themes["app_color"]["pink"]
         )
 
-        # ICON BUTTON 2
-        self.icon_button_2 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
-            parent=self,
-            app_parent=None,
-            tooltip_text="BTN with tooltip",
-            width=40,
-            height=40,
-            radius=8,
-            dark_one=self.themes["app_color"]["dark_one"],
-            icon_color=self.themes["app_color"]["icon_color"],
-            icon_color_hover=self.themes["app_color"]["icon_hover"],
-            icon_color_pressed=self.themes["app_color"]["white"],
-            icon_color_active=self.themes["app_color"]["icon_active"],
-            bg_color=self.themes["app_color"]["dark_one"],
-            bg_color_hover=self.themes["app_color"]["dark_three"],
-            bg_color_pressed=self.themes["app_color"]["green"],
-        )
-
-        # ICON BUTTON 3
-        self.icon_button_3 = PyIconButton(
-            icon_path=Functions.set_svg_icon("icon_add_user.svg"),
-            parent=self,
-            app_parent=None,
-            tooltip_text="BTN actived! (is_actived = True)",
-            width=40,
-            height=40,
-            radius=8,
-            dark_one=self.themes["app_color"]["dark_one"],
-            icon_color=self.themes["app_color"]["icon_color"],
-            icon_color_hover=self.themes["app_color"]["icon_hover"],
-            icon_color_pressed=self.themes["app_color"]["white"],
-            icon_color_active=self.themes["app_color"]["icon_active"],
-            bg_color=self.themes["app_color"]["dark_one"],
-            bg_color_hover=self.themes["app_color"]["dark_three"],
-            bg_color_pressed=self.themes["app_color"]["context_color"],
-            is_active=True
-        )
 
         # PUSH BUTTON 1
         self.push_button_1 = PyPushButton(
@@ -198,9 +160,10 @@ class historyWindow(QWidget):
             bg_color_pressed=self.themes["app_color"]["dark_four"]
         )
 
-        self.icon_3 = QIcon(Functions.set_svg_icon("icon_add_user.svg"))
+        self.icon_3 = QIcon(Functions.set_svg_icon("add.svg"))
         self.push_button_2.setMaximumHeight(30)
         self.push_button_2.setIcon(self.icon_3)
+        self.push_button_2.setIconSize(QSize(28, 28))
 
         # PUSH BUTTON 3
         self.push_button_3 = PyPushButton(
@@ -211,9 +174,10 @@ class historyWindow(QWidget):
             bg_color_hover=self.themes["app_color"]["dark_three"],
             bg_color_pressed=self.themes["app_color"]["dark_four"]
         )
-        self.icon_4 = QIcon(Functions.set_svg_icon("icon_close.svg"))
+        self.icon_4 = QIcon(Functions.set_svg_icon("delete.svg"))
         self.push_button_3.setMaximumHeight(30)
         self.push_button_3.setIcon(self.icon_4)
+        self.push_button_3.setIconSize(QSize(43, 43))
 
         # TABLE WIDGETS
         self.table_widget = PyTableWidget(
